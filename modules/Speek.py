@@ -4,7 +4,7 @@
 import pyttsx3
 import _thread	
 
-SpeekOnOff = False
+SpeekOnOff = True
 engine = pyttsx3.init()
 
 #use under scores '_' insted of spaces
