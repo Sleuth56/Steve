@@ -22,8 +22,6 @@ import pyttsx3
 
 
 #text = input(": ")
-from pocketsphinx import LiveSpeech
-
 speech = LiveSpeech(lm=False, keyphrase='steve', kws_threshold=1e-20)
 for phrase in speech:
   words = phrase.segments(detailed=False)
