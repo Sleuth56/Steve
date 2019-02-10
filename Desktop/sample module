@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+#put imports here
+
+
+#use under scores '_' insted of spaces
+def quorry():
+  return ['put', 'words', 'or', 'phraises', 'that', 'you', 'want', 'to', 'trigger', 'your', 'module']
+
+
+def put_your_working_code_here(quorry=''):
+  pass
+
+
+#put the code specific to making your code work with Steve
+#exp. removing all the text from the string that isn't needed
+def Steve(quorry=''):
+  pass
