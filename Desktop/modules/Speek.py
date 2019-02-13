@@ -6,7 +6,8 @@ import _thread
 import time
 
 SpeekOnOff = True
-IfStopping = False
+
+engine = pyttsx3.init()
 
 #use under scores '_' insted of spaces
 def quorry():
@@ -14,18 +15,14 @@ def quorry():
 
 
 def onWord(name, location, length):
-  engine.stop()
-  # if IfStopping == True:
-  #   engine.stop()
-  #   IfStopping = False
-
+  pass
 
 def f(text):
+  print('started')
   if SpeekOnOff == True:
-    engine = pyttsx3.init()
     rate = engine.getProperty('rate')
-    engine.setProperty('rate', rate - 160)
-    engine.connect('started-word', onWord)
+    engine.setProperty('rate', rate - 90)
+    engine.connect('word', onWord)
     engine.say(text)
     engine.runAndWait()
   else:
@@ -37,7 +34,7 @@ def Speek(text):
 
 
 def stop():
-  IfStopping = True
+  engine.stop()
 
 
 

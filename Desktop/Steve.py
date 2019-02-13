@@ -23,12 +23,13 @@ import time
 Speek.Speek("Hi I'm Steve")
 
 for words in LiveSpeech():
+  words = wordtonum.wordtonum(str(words))
+  words = str(words)
+  words = words.replace(' ', '_')
   if 'steve' in words:
-    words = wordtonum.wordtonum(str(words))
-    words = str(words)
-    words = words.replace(' ', '_')
+    print('active')
     print(words)
-
+    found = False
     # if found == False:
     #   for i in range(len(your_module.quorry())):
     #     if your_module.quorry()[i] in words:
